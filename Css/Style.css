@@ -1474,7 +1474,7 @@ a {
 }
 .footer .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 40px;
 }
 .footer .box .us h2 {
@@ -1557,12 +1557,6 @@ a {
     gap: 10px;
     justify-content: center;
     margin-top: 20px;
-}
-@media (max-width:767px) {
-    .footer .box .studio {
-        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
-
-    }
 }
 .footer .box img {
     width: 70px;
