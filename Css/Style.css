@@ -1480,7 +1480,12 @@ a {
 .footer .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 30px;
+    gap: 20px;
+}
+@media(max-width: 991px) {
+    .footer .container {
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    }
 }
 .footer .box .us h2 {
     margin: 0;
@@ -1556,24 +1561,28 @@ a {
     margin-top: 10px;
     color: white;
 }
-.footer .box .studio {
+.footer .photo {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(73px, 1fr));
     gap: 10px;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 35px;
 }
-@media(max-width: 767px) {
-    .footer .box .studio {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+@media (max-width: 991px) {
+    .footer .photo {
+        grid-template-columns: repeat(auto-fill, minmax(95px, 1fr));
+        margin: 0;
     }
 }
 .footer .box img {
-    width: 100%;
+    max-width: 100%;
+    width: 81px;
 }
-@media (max-width:767px) {
-    .footer .box .studio img {
-        width: 115px;
+@media (max-width: 991px) {
+    .footer .box img {
+        max-width: 100%;
+        width: 100%;
     }
 }
 .end {
@@ -1590,7 +1599,7 @@ a {
     font-size: 16px;
     font-weight: bold;
 }
-.end .go-up {
+.go-up {
     color: var(--main-color);
     font-size: 16px;
     font-weight: bold;
