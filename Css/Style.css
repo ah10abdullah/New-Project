@@ -1570,19 +1570,16 @@ a {
     margin-bottom: 35px;
 }
 @media (max-width: 991px) {
-    .footer .photo {
-        grid-template-columns: repeat(auto-fill, minmax(95px, 1fr));
-        margin: 0;
+    .footer .photo .image {
+        max-width: 100%;
     }
 }
 .footer .box img {
-    max-width: 100%;
-    width: 81px;
+    width: 100%;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
     .footer .box img {
-        max-width: 100%;
-        width: 100%;
+       max-width: 100%;
     }
 }
 .end {
